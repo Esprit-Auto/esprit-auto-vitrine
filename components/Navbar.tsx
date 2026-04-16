@@ -82,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden fixed inset-0 top-16 bg-bg z-[200] flex flex-col items-center justify-center gap-8">
+        <div className="md:hidden fixed inset-0 top-0 bg-bg z-[200] flex flex-col items-center justify-center gap-8">
           {links.map((l) => (
             <a
               key={l.href}
