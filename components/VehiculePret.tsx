@@ -60,7 +60,7 @@ export default function VehiculePret() {
                 alt="Véhicule de prêt"
                 width={400}
                 height={250}
-                className="w-full max-w-[400px]"
+                className="w-full max-w-[520px] -rotate-[3deg]"
               />
             </div>
           </div>
