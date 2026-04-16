@@ -11,7 +11,7 @@ interface ContactBody {
 
 const BREVO_URL = "https://api.brevo.com/v3/smtp/email";
 const GARAGE_EMAIL = "esprit.auto38160@gmail.com";
-const SENDER = { name: "Esprit Auto - Site Web", email: "noreply@esprit-auto.fr" };
+const SENDER = { name: "Esprit Auto - Site Web", email: "esprit.auto38160@gmail.com" };
 
 function sendBrevoEmail(apiKey: string, payload: Record<string, unknown>) {
   return fetch(BREVO_URL, {
