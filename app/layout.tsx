@@ -16,6 +16,13 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://espritauto38.com"),
   title:
