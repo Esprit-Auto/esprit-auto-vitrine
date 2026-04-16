@@ -14,7 +14,7 @@ const checks = [
   },
   {
     bold: "Réparations rapides et soignées",
-    text: ", notre équipe traite votre véhicule avec le même soin, sinistre ou pas.",
+    text: ", notre équipe traite votre véhicule avec le même soin.",
   },
   {
     bold: "Un seul interlocuteur",
@@ -50,7 +50,7 @@ export default function Garanties() {
             </div>
             <h2 className="font-bebas text-3xl md:text-4xl text-text mb-4 leading-tight">
               Votre garage
-              <br />
+
               multimarque
             </h2>
             <p className="text-muted text-sm leading-relaxed mb-6">
@@ -82,16 +82,16 @@ export default function Garanties() {
               <path d="M18 28l6 6 14-14" />
             </svg>
             <div className="text-[11px] uppercase tracking-[3px] text-or font-semibold mb-2">
-              Tous sinistres
+              Prise en charge assurance
             </div>
             <h2 className="font-bebas text-3xl md:text-4xl text-text mb-4 leading-tight">
-              Votre sinistre
-              <br />
-              on s&rsquo;en occupe
+              Prise en charge assurance
+
+              
             </h2>
             <p className="text-muted text-sm leading-relaxed mb-6">
-              Vous avez eu un accident, un bris de glace ou un sinistre ? Peu
-              importe votre assureur, venez directement chez nous. On prend en
+              Bris de glace, carrosserie, pare-chocs... Quel que soit votre assureur, venez directement chez nous.
+              On prend en
               main votre dossier de A &agrave; Z et on fait le lien avec votre
               compagnie.
             </p>
