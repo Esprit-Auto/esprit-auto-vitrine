@@ -46,7 +46,7 @@ function getInitials(name: string): string {
 
 export default function Avis() {
   return (
-    <section id="avis" className="bg-bg py-16 md:py-24 overflow-hidden">
+    <section id="avis" className="bg-bg py-16 md:py-24">
       <div className="max-w-[1120px] mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <div className="text-[11px] uppercase tracking-[3px] text-or font-semibold mb-3">
@@ -74,7 +74,7 @@ export default function Avis() {
           </a>
         </div>
       </div>
-      <div className="pt-2">
+      <div className="pt-2 overflow-hidden">
         <Carousel speed={0.6} gap={20} cardSelector=".rv-card">
           {avis.map((a, i) => (
             <div
