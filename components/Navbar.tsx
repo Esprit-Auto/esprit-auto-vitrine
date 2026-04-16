@@ -44,6 +44,7 @@ export default function Navbar() {
       </nav>
       {open && (
         <div className="md:hidden fixed inset-0 bg-bg flex flex-col items-center justify-center gap-8" style={{zIndex: 9999}}>
+          <button onClick={() => setOpen(false)} className="absolute top-5 right-4 w-11 h-11 flex flex-col justify-center items-center gap-1.5" aria-label="Fermer"><span className="block w-6 h-[2px] bg-text rotate-45 translate-y-[1px]" /><span className="block w-6 h-[2px] bg-text -rotate-45 -translate-y-[1px]" /></button>
           {links.map((l) => (
             <a key={l.href} href={l.href} className="text-text text-3xl font-bebas tracking-wider" onClick={() => setOpen(false)}>{l.label}</a>
           ))}
