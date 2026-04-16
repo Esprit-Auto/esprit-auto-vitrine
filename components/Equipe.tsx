@@ -41,30 +41,26 @@ export default function Equipe() {
             de votre véhicule à Saint-Marcellin.
           </p>
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {team.map((m) => (
             <div
               key={m.name}
               className="bg-bg3 border border-bd rounded-lg p-6 text-center flex flex-col items-center gap-3 group transition-all duration-300 hover:-translate-y-1 hover:border-[rgba(212,82,26,0.4)] hover:shadow-[0_0_20px_rgba(212,82,26,0.15)]"
             >
-              <div className="relative w-16 h-16">
-                <svg
-                  width="64"
-                  height="64"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  className="text-muted"
+              <svg width="72" height="72" viewBox="0 0 72 72">
+                <circle cx="36" cy="36" r="34" fill="#D4521A"/>
+                <text
+                  x="36"
+                  y="44"
+                  textAnchor="middle"
+                  fill="#fff"
+                  fontSize="24"
+                  fontFamily="Arial Black, Arial"
+                  fontWeight="900"
                 >
-                  <circle cx="24" cy="16" r="10" />
-                  <path d="M6 44c0-9.9 8.1-18 18-18s18 8.1 18 18" />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center text-or font-bold text-sm">
                   {m.initials}
-                </div>
-              </div>
+                </text>
+              </svg>
               <div className="font-bebas text-xl text-text">{m.name}</div>
               <div className="text-or text-[11px] uppercase tracking-wider">
                 {m.role}
