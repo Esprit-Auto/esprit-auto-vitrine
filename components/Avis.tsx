@@ -74,7 +74,7 @@ export default function Avis() {
           </a>
         </div>
       </div>
-      <div className="pt-2 overflow-hidden">
+      <div className="pt-4">
         <Carousel speed={0.6} gap={20} cardSelector=".rv-card">
           {avis.map((a, i) => (
             <div

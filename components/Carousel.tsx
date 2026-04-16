@@ -92,7 +92,7 @@ export default function Carousel({
         </svg>
       </button>
       <div
-        className="overflow-hidden"
+        className="pt-3 -mt-3"
         onMouseEnter={() => (pausedRef.current = true)}
         onMouseLeave={() => (pausedRef.current = false)}
       >
