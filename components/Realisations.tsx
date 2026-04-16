@@ -1,62 +1,17 @@
 "use client";
-
 import Carousel from "./Carousel";
+import Image from "next/image";
 
 const photos = [
-  { label: "Remplacement pare-brise", icon: "windshield" },
-  { label: "Réparation carrosserie", icon: "body" },
-  { label: "Réparation d'impact", icon: "impact" },
-  { label: "Peinture & retouche", icon: "paint" },
-  { label: "Intervention mécanique", icon: "mechanic" },
-  { label: "Débosselage PDR", icon: "dent" },
+  { src: "/realisations/r1.jpg", alt: "Réalisation Esprit Auto" },
+  { src: "/realisations/r2.jpg", alt: "Réalisation Esprit Auto" },
+  { src: "/realisations/r3.jpg", alt: "Réalisation Esprit Auto" },
+  { src: "/realisations/r4.jpg", alt: "Réalisation Esprit Auto" },
+  { src: "/realisations/r5.jpg", alt: "Réalisation Esprit Auto" },
+  { src: "/realisations/r6.jpg", alt: "Réalisation Esprit Auto" },
+  { src: "/realisations/r7.jpg", alt: "Réalisation Esprit Auto" },
+  { src: "/realisations/r8.jpg", alt: "Réalisation Esprit Auto" },
 ];
-
-function PhotoIcon({ icon }: { icon: string }) {
-  const stroke = "rgba(212,82,26,.5)";
-  switch (icon) {
-    case "windshield":
-      return (
-        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={stroke} strokeWidth={1.5}>
-          <rect x="4" y="16" width="40" height="22" rx="3" />
-          <path d="M4 22h40M10 16l4-9h20l4 9" />
-          <circle cx="15" cy="22" r="2" fill={stroke} />
-          <circle cx="33" cy="22" r="2" fill={stroke} />
-        </svg>
-      );
-    case "body":
-    case "dent":
-      return (
-        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={stroke} strokeWidth={1.5}>
-          <path d="M6 34l5-18h26l5 18H6z" />
-          <path d="M4 34h40v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-5z" />
-        </svg>
-      );
-    case "impact":
-      return (
-        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={stroke} strokeWidth={1.5}>
-          <circle cx="24" cy="24" r="18" />
-          <circle cx="24" cy="24" r="5" />
-          <path d="M24 6v5M24 37v5M6 24h5M37 24h5" />
-        </svg>
-      );
-    case "paint":
-      return (
-        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={stroke} strokeWidth={1.5}>
-          <path d="M8 14l4-6h24l4 6v22l-4 6H12l-4-6V14z" />
-          <path d="M16 20h16M16 28h10" />
-        </svg>
-      );
-    case "mechanic":
-      return (
-        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke={stroke} strokeWidth={1.5}>
-          <circle cx="24" cy="18" r="9" />
-          <path d="M9 42a15 15 0 0 1 30 0" />
-        </svg>
-      );
-    default:
-      return null;
-  }
-}
 
 export default function Realisations() {
   return (
@@ -82,12 +37,14 @@ export default function Realisations() {
               key={i}
               className="ph-card flex-shrink-0 w-[280px] md:w-[340px]"
             >
-              <div className="aspect-[4/3] bg-bg3 rounded-lg border border-bd flex flex-col items-center justify-center gap-3">
-                <PhotoIcon icon={p.icon} />
-                <span className="text-muted text-xs">Photo &agrave; venir</span>
-              </div>
-              <div className="mt-2 text-sm text-text font-medium text-center">
-                {p.label}
+              <div className="aspect-[4/3] bg-bg3 rounded-lg border border-bd overflow-hidden relative">
+                <Image
+                  src={p.src}
+                  alt={p.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 280px, 340px"
+                />
               </div>
             </div>
           ))}
