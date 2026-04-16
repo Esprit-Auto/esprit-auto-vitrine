@@ -74,7 +74,7 @@ export default function Avis() {
           </a>
         </div>
       </div>
-      <div>
+      <div className="pt-2">
         <Carousel speed={0.6} gap={20} cardSelector=".rv-card">
           {avis.map((a, i) => (
             <div
@@ -89,7 +89,7 @@ export default function Avis() {
                 <div className="w-9 h-9 rounded-full bg-or/20 flex items-center justify-center text-or text-xs font-bold">
                   {getInitials(a.auteur)}
                 </div>
-                <div>
+                <div className="flex items-center gap-3">
                   <div className="text-text text-sm font-medium">
                     {a.auteur}
                   </div>
