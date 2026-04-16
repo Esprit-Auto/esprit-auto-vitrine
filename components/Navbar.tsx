@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-[100] bg-[rgba(14,14,14,0.97)] backdrop-blur-2xl border-b border-bd h-16">
       <div className="max-w-full mx-auto px-4 md:px-6 h-full flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2.5 no-underline">
-          <div className="w-[38px] h-[38px] rounded-full overflow-hidden flex-shrink-0">
+          <div className="w-[46px] h-[46px] md:w-[38px] md:h-[38px] rounded-full overflow-hidden flex-shrink-0">
             <Image
               src="/logo.png"
               alt="Esprit Auto logo"
@@ -82,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden fixed inset-0 top-16 bg-bg z-[99] flex flex-col items-center justify-center gap-8">
+        <div className="md:hidden fixed inset-0 top-16 bg-bg z-[200] flex flex-col items-center justify-center gap-8">
           {links.map((l) => (
             <a
               key={l.href}
