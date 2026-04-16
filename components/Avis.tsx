@@ -46,7 +46,7 @@ function getInitials(name: string): string {
 
 export default function Avis() {
   return (
-    <section id="avis" className="bg-bg py-16 md:py-24">
+    <section id="avis" className="bg-bg pt-16 md:pt-24 pb-4 md:pb-8">
       <div className="max-w-[1120px] mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <div className="text-[11px] uppercase tracking-[3px] text-or font-semibold mb-3">
