@@ -83,7 +83,7 @@ export async function POST(req: NextRequest) {
     htmlContent: `
       <div style="font-family:'DM Sans',Helvetica,Arial,sans-serif;max-width:600px;margin:0 auto;color:#333">
         <div style="text-align:center;padding:24px 0;border-bottom:2px solid #D4521A">
-          <h1 style="font-family:'Bebas Neue',Helvetica,sans-serif;font-size:28px;color:#D4521A;margin:0;letter-spacing:2px">ESPRIT AUTO</h1>
+          <img src="https://espritauto38.com/logo.png" alt="Esprit Auto" style="width:100px;height:100px;object-fit:contain" />
           <p style="font-size:11px;color:#888;letter-spacing:3px;text-transform:uppercase;margin:4px 0 0">Carrosserie · Vitrage · Mécanique</p>
         </div>
 
